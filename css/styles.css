@@ -1,0 +1,237 @@
+:root {
+   /* COLOR */
+
+   --prime-text-color: #757575;
+   --second-text-color: #212121;
+   --white-text-color: #ffffff;
+   --prime-bg-color: #ffffff;
+   --second-bg-color: #f5f4fa;
+   --dark-bg-color: #2f303a;
+   --accent-color: #2196f3;
+   --btn-active-color: #188ce8;
+   --logo-dark-color: #000000;
+   --footer-link-color: rgba(255, 255, 255, 0.6);
+
+   /* --btn-bg-filter: #F5F4FA; */
+}
+body *{
+   outline: 1px solid teal;
+}
+
+body {
+   background-color: var(--prime-bg-color);
+   color: var(--prime-text-color);
+   font-family: 'Roboto', sans-serif;
+
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+}
+
+/* === COMMON === */
+.link {
+   text-decoration: none;
+}
+.list {
+   list-style: none;
+}
+.btn {
+   border-radius: 4px;
+   font-family: inherit;
+   cursor: pointer;
+}
+
+.title {
+   color: var(--second-text-color);
+}
+.section-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+}
+
+.visually-hidden {
+   position: fixed;
+   transform: scale(0);
+}
+/* ------------------ */
+
+/* HEADER */
+/* ---logo--- */
+.logo {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 2.2;
+   letter-spacing: 0.03em;
+
+   color: var(--accent-color);
+}
+.logo .light {
+   color: var(--logo-dark-color);
+}
+
+/* ---nav--- */
+.nav-link {
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+
+   color: var(--second-text-color);
+}
+.nav-link.current {
+   color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+   color: var(--accent-color);
+}
+
+/* --contact-- */
+.contaсt-list .link {
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+
+   color: inherit;
+}
+.contaсt-list .link:hover,
+.contaсt-list .link:focus {
+   color: var(--accent-color);
+}
+/* ---------------   */
+
+/* MAIN */
+/* --hero-- */
+.hero {
+   background-color: var(--dark-bg-color);
+   text-align: center;
+}
+.hero-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   color: var(--white-text-color);
+}
+.hero-btn {
+   min-width: 216px;
+   padding: 10px 32px;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+   background-color: var(--btn-active-color);
+}
+
+/* --feature-- */
+.feature-pretitle {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+}
+/* --------- */
+
+/* --Work-- */
+
+/* -------- */
+
+/* --Team-- */
+.team {
+   background-color: var(--second-bg-color);
+}
+.team-title {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+}
+.team-text {
+   font-size: 16px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+}
+/* ----------- */
+
+/* FOOTER */
+.footer {
+   background-color: var(--dark-bg-color);
+}
+/* --Logo-- */
+.logo-dark {
+   color: var(--white-text-color);
+}
+/* --Address */
+.contact-footer {
+   font-style: normal;
+   font-style: inherit;
+}
+.footer-text {
+}
+
+.footer-link.map {
+   color: var(--white-text-color);
+}
+.footer-link {
+   color: var(--footer-link-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+   color: var(--accent-color);
+}
+/* ! --- STUDIO FIN --- */
+
+/* PORTFOLIO */
+
+/* --filter-- */
+.filter-btn {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63;
+   /* identical to box height, or 162% */
+
+   text-align: center;
+   letter-spacing: 0.03em;
+
+   color: #212121;
+   background-color: var(--second-bg-color);
+}
+.filter-btn.active {
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* --Examples-- */
+.examples-title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+.examples-text {
+   font-size: 16px;
+   line-height: 1.88;
+}
