@@ -60,6 +60,15 @@ img {
    margin-right: auto;
 }
 
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.no-padding {
+   padding-top: 0;
+}
+
 .link {
    text-decoration: none;
 }
@@ -72,6 +81,7 @@ img {
    border-radius: 4px;
    font-family: inherit;
    cursor: pointer;
+   border: 1px solid transparent;
 }
 
 .title {
@@ -93,7 +103,7 @@ img {
 /* HEADER */
 
 .main-head {
-   display: flex;
+   /* display: flex; */
    background-color: beige;
 }
 
@@ -187,10 +197,28 @@ img {
    padding-top: 200px;
    padding-bottom: 200px;
 
+   /* background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+   ); */
+
+   background-image: linear-gradient(
+         to right,
+         rgba(255, 0, 0, 0.2),
+         rgba(0, 0, 255, 0.1)
+      ),
+      url(../images/hero-bg.jpg);
+
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
    text-align: center;
-   background-color: var(--hero-bg-color);
+   /* background-color: var(--hero-bg-color); */
 }
 .hero-title {
+   margin-bottom: 30px;
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -218,11 +246,23 @@ img {
 }
 
 /* --feature-- */
+
+.feature-list {
+   display: flex;
+   margin-top: -30px;
+   margin-left: -30px;
+}
+
+.feature-list .item {
+   flex-basis: calc((100% - 4 * 30) / 4);
+   margin-top: 30px;
+   margin-left: 30px;
+}
+
 .feature-pretitle {
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
-   letter-spacing: 0.03em;
    text-transform: uppercase;
 }
 /* --------- */
